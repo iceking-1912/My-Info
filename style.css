@@ -1,0 +1,102 @@
+body {
+  background-image: url(./triangle_background.png);
+  background-size: cover;
+  width: 0px;
+  height: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-position: top center;
+
+}
+
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: #47ebf7;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f51101;
+}
+
+#hi {
+  font-size: 7em;
+  font-weight: bold;
+  margin-left: 200px;
+  margin-top: 300px;
+  color: rgb(255, 141, 121);
+  font-family: "Sedgwick Ave", cursive;
+  line-height: 150px;
+  margin-left: 300px;
+}
+.divme {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  line-height: 55px;
+  background-color: #048bfa;
+  font-family: "Sedgwick Ave", cursive;
+  box-shadow: rgb(243, 141, 141) 0px 5px 50px;
+  border-radius: 45px;
+  padding: 40px;
+  border: 2px solid rgb(5, 248, 66);
+  width: 650px;
+  height: 500px;
+  margin-top: -650px;
+  margin-left: 1000px;
+}
+
+#gh {
+  box-shadow: rgb(0, 0, 0) 0px 5px 50px;
+  border-radius: 5px;
+  border: 2px solid rgb(5, 248, 66);
+  width: 200px;
+  margin-top: 70px;
+  margin-left: 50px;
+  background-color: rgba(89, 140, 250, 0.932);
+}
+
+#tw {
+  box-shadow: rgb(0, 0, 0) 0px 5px 50px;
+  border-radius: 5px;
+  border: 2px solid rgb(5, 248, 66);
+  width: 200px;
+  margin-top: -85px;
+  margin-left: 375px;
+}
+
+.div1 {
+  line-height: 55px;
+  text-align: center;
+  font-family: "Sedgwick Ave", cursive;
+  background-color: #ff553eda;
+  box-shadow: rgb(2, 2, 250) 0px 5px 50px;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 1000px;
+  margin-bottom: 100px;
+  width: 300px;
+  border: 2px solid #07f5e1f1;
+}
+
+.div2 {
+  background-color: #05fc05;
+  line-height: 55px;
+  text-align: center;
+  font-family: "Sedgwick Ave", cursive;
+  box-shadow: rgba(252, 2, 239, 0.986) 0px 5px 50px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 300px;
+  height: 165px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 1400px;
+  border: 2px solid #0733f5f1;
+}
