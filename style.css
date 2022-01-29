@@ -1,17 +1,227 @@
-body {
-  background-image: url(./triangle_background.png);
-  background-size: cover;
-  width: 0;
-  margin: 0;
-
+:root {
+  font-size: 16px;
+  font-family: sans-serif;
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
 }
 
+body {
+  color: black;
+  background-color: rgb(248, 8, 8);
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+.navbar {
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: width 600ms ease;
+  /*overflow: scroll;*/
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+.nav-item:last-child {
+  margin-top: auto;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.fa-primary {
+  color: #ff7eee;
+}
+
+.fa-secondary {
+  color: #df49a6;
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+
+.logo-text {
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo svg {
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text {
+    left: 0px;
+  }
+}
+
+.dark {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+}
+
+.light {
+  --text-primary: #1f1f1f;
+  --text-secondary: #000000;
+  --bg-primary: #ffffff;
+  --bg-secondary: #e4e4e4;
+}
+
+.solar {
+  --text-primary: #576e75;
+  --text-secondary: #35535c;
+  --bg-primary: #fdf6e3;
+  --bg-secondary: #f5e5b8;
+}
+
+.theme-icon {
+  display: none;
+}
+
+.dark #darkIcon {
+  display: block;
+}
+
+.light #lightIcon {
+  display: block;
+}
+
+.solar #solarIcon {
+  display: block;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
 
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
 body::-webkit-scrollbar-track {
-  background-color: #47ebf7;
+  background-color: #4a8bfd /*#47ebf7*/;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -21,13 +231,23 @@ body::-webkit-scrollbar-thumb {
 #hi {
   font-size: 7em;
   font-weight: bold;
-  margin-left: 200px;
+  margin-left: 50px;
   margin-top: 300px;
   color: rgb(255, 141, 121);
   font-family: "Sedgwick Ave", cursive;
   line-height: 150px;
-  margin-left: 300px;
+  margin-left: 100px;
 }
+
+/* .nav-list {
+  background-color: #4a8bfd;
+  position: absolute;
+  width: 3.5%;
+  height: 100%;
+  margin-top: -300px;
+  line-height: 350px;
+} */
+
 .divme {
   font-size: 30px;
   text-align: center;
@@ -38,30 +258,30 @@ body::-webkit-scrollbar-thumb {
   box-shadow: rgb(243, 141, 141) 0px 5px 50px;
   border-radius: 45px;
   padding: 40px;
-  border: 2px solid rgb(5, 248, 66);
+  border: 2px solid rgb(232, 248, 5);
   width: 650px;
   height: 500px;
-  margin-top: -650px;
-  margin-left: 1000px;
+  margin-top: -470px;
+  margin-left: 900px;
 }
 
 #gh {
-  box-shadow: rgb(0, 0, 0) 0px 5px 50px;
+  box-shadow: rgb(0, 0, 0.5) 0px 5px 50px;
   border-radius: 5px;
-  border: 2px solid rgb(5, 248, 66);
+  border: 2px solid rgb(3, 116, 182);
   width: 200px;
-  margin-top: 70px;
+  margin-top: 20px;
   margin-left: 50px;
-  background-color: rgba(89, 140, 250, 0.932);
 }
 
 #tw {
-  box-shadow: rgb(0, 0, 0) 0px 5px 50px;
+  box-shadow: rgb(0, 0, 0.5) 0px 5px 50px;
   border-radius: 5px;
-  border: 2px solid rgb(5, 248, 66);
+  border: 2px solid rgb(8, 8, 8);
   width: 200px;
   margin-top: -85px;
   margin-left: 375px;
+  background-color: #1d9bf0;
 }
 
 .div1 {
@@ -70,11 +290,11 @@ body::-webkit-scrollbar-thumb {
   font-family: "Sedgwick Ave", cursive;
   background-color: #ff553eda;
   box-shadow: rgb(2, 2, 250) 0px 5px 50px;
-  border-radius: 5px;
+  border-radius: 15px 50px;
   padding: 5px;
   position: absolute;
   margin-top: 55px;
-  margin-left: 1000px;
+  margin-left: 900px;
   margin-bottom: 100px;
   width: 300px;
   border: 2px solid #07f5e1f1;
@@ -86,12 +306,12 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   font-family: "Sedgwick Ave", cursive;
   box-shadow: rgba(252, 2, 239, 0.986) 0px 5px 50px;
-  border-radius: 5px;
+  border-radius: 15px 50px;
   padding: 5px;
   width: 300px;
   height: 165px;
   position: absolute;
   margin-top: 55px;
-  margin-left: 1400px;
+  margin-left: 1300px;
   border: 2px solid #0733f5f1;
 }
