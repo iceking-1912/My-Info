@@ -1,3 +1,51 @@
+
+.custom-shape-divider-top-1643544182 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1643544182 svg {
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 320px;
+}
+
+.custom-shape-divider-top-1643544182 .shape-fill {
+  fill: #202731;
+}
+
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1643544182 svg {
+    width: calc(136% + 1.3px);
+    height: 444px;
+  }
+}
+
+.custom-shape-divider-bottom-1643547284 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1643547284 svg {
+  position: relative;
+  display: block;
+  width: calc(110% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1643547284 .shape-fill {
+  fill: #FFFFFF;
+}
 :root {
   font-size: 16px;
   font-family: sans-serif;
@@ -52,6 +100,7 @@ main {
 .nav-item {
   width: 100%;
 }
+
 .nav-item:last-child {
   margin-top: auto;
 }
@@ -211,17 +260,15 @@ main {
 }
 
 body {
-  color: black;
-  background-color: white;
-  margin: 0;
-  padding: 0;
+  background-image: url(./triangle_background.png);
+  background-size: cover;
 }
 
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
 body::-webkit-scrollbar-track {
-  background-color: #4a8bfd /*#47ebf7*/;
+  background-color: #4a8bfd;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -239,15 +286,6 @@ body::-webkit-scrollbar-thumb {
   margin-left: 100px;
 }
 
-/* .nav-list {
-  background-color: #4a8bfd;
-  position: absolute;
-  width: 3.5%;
-  height: 100%;
-  margin-top: -300px;
-  line-height: 350px;
-} */
-
 .divme {
   font-size: 30px;
   text-align: center;
@@ -262,7 +300,7 @@ body::-webkit-scrollbar-thumb {
   width: 650px;
   height: 500px;
   margin-top: -470px;
-  margin-left: 900px;
+  margin-left: 1000px;
 }
 
 #gh {
@@ -288,13 +326,13 @@ body::-webkit-scrollbar-thumb {
   line-height: 55px;
   text-align: center;
   font-family: "Sedgwick Ave", cursive;
-  background-color: #ff553eda;
+  background-color: #ff543efd;
   box-shadow: rgb(2, 2, 250) 0px 5px 50px;
   border-radius: 15px 50px;
   padding: 5px;
   position: absolute;
   margin-top: 55px;
-  margin-left: 900px;
+  margin-left: 1000px;
   margin-bottom: 100px;
   width: 300px;
   border: 2px solid #07f5e1f1;
@@ -312,6 +350,29 @@ body::-webkit-scrollbar-thumb {
   height: 165px;
   position: absolute;
   margin-top: 55px;
-  margin-left: 1300px;
+  margin-left: 1400px;
   border: 2px solid #0733f5f1;
+}
+
+#footer {
+  background-color: #4a8bfd;
+  margin-top: 300px;
+  align-items: center;
+  padding: 10px;
+
+  border-radius: 10px;
+}
+
+.coninfo {
+  margin-left: 250px;
+}
+
+.certi {
+  margin-left: 750px;
+  margin-top: -70px;
+}
+
+.perinfo {
+  margin-top: -70px;
+  margin-left: 1250px;
 }
