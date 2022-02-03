@@ -263,7 +263,7 @@ body {
   background-image: url(./triangle_background.png);
   background-size: cover;
 }
-
+/* ../../Pictures/some_memee_meow.jfif*/
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -276,39 +276,39 @@ body::-webkit-scrollbar-thumb {
 }
 
 #hi {
-  font-size: 7em;
+  font-size: 75px;
   font-weight: bold;
-  margin-left: 50px;
-  margin-top: 300px;
-  color: rgb(255, 141, 121);
+  margin-top: 250px;
+  color: rgb(255, 230, 121);
   font-family: "Sedgwick Ave", cursive;
-  line-height: 150px;
-  margin-left: 100px;
+  line-height: 75px;
+  margin-left: 50px;
 }
 
 .divme {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   padding: 10px;
-  line-height: 55px;
+  line-height: 50px;
   background-color: #048bfa;
   font-family: "Sedgwick Ave", cursive;
   box-shadow: rgb(243, 141, 141) 0px 5px 50px;
-  border-radius: 45px;
-  padding: 40px;
+  border-radius:35px;
+  padding: 4px;
   border: 2px solid rgb(232, 248, 5);
-  width: 650px;
-  height: 500px;
-  margin-top: -470px;
-  margin-left: 1000px;
+  width: 600px;
+  height: 450px;
+  margin-top: -320px;
+  margin-left: 750px;
+
 }
 
 #gh {
   box-shadow: rgb(0, 0, 0.5) 0px 5px 50px;
   border-radius: 5px;
-  border: 2px solid rgb(3, 116, 182);
+  border: 2px solid rgb(194, 55, 55);
   width: 200px;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-left: 50px;
 }
 
@@ -317,49 +317,49 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
   border: 2px solid rgb(8, 8, 8);
   width: 200px;
-  margin-top: -85px;
-  margin-left: 375px;
+  margin-top: -77px;
+  margin-left: 330px;
   background-color: #1d9bf0;
 }
 
 .div1 {
-  line-height: 55px;
+  line-height: 40px;
   text-align: center;
+  font-size: 15px;
   font-family: "Sedgwick Ave", cursive;
   background-color: #ff543efd;
   box-shadow: rgb(2, 2, 250) 0px 5px 50px;
   border-radius: 15px 50px;
-  padding: 5px;
   position: absolute;
-  margin-top: 55px;
-  margin-left: 1000px;
+  margin-top: 20px;
+  margin-left: 750px;
   margin-bottom: 100px;
-  width: 300px;
+  width: 290px;
+  height: 140px;
   border: 2px solid #07f5e1f1;
 }
 
 .div2 {
   background-color: #05fc05;
-  line-height: 55px;
-  text-align: center;
   font-family: "Sedgwick Ave", cursive;
   box-shadow: rgba(252, 2, 239, 0.986) 0px 5px 50px;
-  border-radius: 15px 50px;
-  padding: 5px;
-  width: 300px;
-  height: 165px;
-  position: absolute;
-  margin-top: 55px;
-  margin-left: 1400px;
+  font-size: 15px;
   border: 2px solid #0733f5f1;
+  width: 290px;
+  height: 140px;
+  border-radius: 15px 50px;
+  position: absolute;
+  line-height: 40px;
+  text-align: center;
+  margin-left: 1080px;
+  margin-top: 20px;
 }
 
 #footer {
   background-color: #4a8bfd;
-  margin-top: 300px;
+  margin-top: 200px;
   align-items: center;
   padding: 10px;
-
   border-radius: 10px;
 }
 
