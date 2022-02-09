@@ -15,7 +15,7 @@
 }
 
 .custom-shape-divider-top-1643544182 .shape-fill {
-  fill: #202731;
+  fill: var(--cur1-color);
 }
 
 @media (max-width: 767px) {
@@ -43,11 +43,11 @@
 }
 
 .custom-shape-divider-bottom-1643547284 .shape-fill {
-  fill: #ffffff;
+  fill: var(--cur2-color);
 }
 :root {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Sedgwick Ave", cursive;
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -222,17 +222,26 @@ main {
 }
 
 .dark {
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-}
-
-.light {
   --text-primary: #1f1f1f;
   --text-secondary: #000000;
   --bg-primary: #ffffff;
   --bg-secondary: #e4e4e4;
+  --wb-bg-color: #c0c0fc;
+  --cur1-color: #f4f4fa;
+  --cur2-color: #f2f2f8;
+  --devm1-bg-color: #8791fa;
+}
+
+.light {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --wb-bg-color: #4e3b6a;
+  --cur1-color: #000000;
+  --cur2-color: #070707;
+  --hi-color: #deeafd;
+  --devm1-bg-color: #0133ca;
 }
 
 .solar {
@@ -240,6 +249,10 @@ main {
   --text-secondary: #35535c;
   --bg-primary: #fdf6e3;
   --bg-secondary: #f5e5b8;
+  --wb-bg-color: #dce1b0;
+  --cur1-color: #e5fa9a;
+  --cur2-color: #b4a003;
+  --devm1-bg-color: #7301ca;
 }
 
 .theme-icon {
@@ -259,10 +272,8 @@ main {
 }
 
 body {
-  background-image: url(./triangle_background.png);
-  background-size: cover;
+  background-color: var(--wb-bg-color);
 }
-/* ../../Pictures/some_memee_meow.jfif*/
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -275,13 +286,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 #hi {
-  font-size: 75px;
+  font-size: 5rem;
   font-weight: bold;
-  margin-top: 250px;
-  color: rgb(255, 230, 121);
+  margin-top: 15rem;
+  color: var(--hi-color);
   font-family: "Sedgwick Ave", cursive;
-  line-height: 75px;
-  margin-left: 50px;
+  margin-left: 1rem;
 }
 
 .divme {
@@ -289,7 +299,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   padding: 10px;
   line-height: 50px;
-  background-color: #045afa;
+  background: linear-gradient(#f14949, #717be7);
   font-family: "Sedgwick Ave", cursive;
   box-shadow: rgb(245, 16, 214) 0px 5px 50px;
   border-radius: 35px;
@@ -297,7 +307,7 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid rgb(252, 5, 231);
   width: 600px;
   height: 450px;
-  margin-top: -370px;
+  margin-top: -380px;
   margin-left: 750px;
   position: sticky;
 }
@@ -308,7 +318,7 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid rgb(194, 55, 55);
   width: 200px;
   margin-top: 25px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 #tw {
@@ -317,20 +327,20 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid rgb(8, 8, 8);
   width: 200px;
   margin-top: -77px;
-  margin-left: 330px;
+  margin-left: 360px;
   background-color: #1d9bf0;
 }
 
 .div1 {
-  line-height: 40px;
+  line-height: 30px;
   text-align: center;
   font-size: 15px;
   font-family: "Sedgwick Ave", cursive;
-  background-color: #fc3a20fd;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
   box-shadow: rgb(2, 2, 250) 0px 5px 50px;
   border-radius: 15px 50px;
   position: absolute;
-  margin-top: 40px;
+  margin-top: 50px;
   margin-left: 750px;
   margin-bottom: 100px;
   width: 290px;
@@ -339,7 +349,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .div2 {
-  background-color: #05fc05;
+  background: linear-gradient(0.25turn, #4b3fa6, #ebf8e1, #f6483c);
   font-family: "Sedgwick Ave", cursive;
   box-shadow: rgba(252, 2, 35, 0.986) 0px 5px 50px;
   font-size: 15px;
@@ -348,15 +358,15 @@ body::-webkit-scrollbar-thumb {
   height: 140px;
   border-radius: 15px 50px;
   position: absolute;
-  line-height: 40px;
+  line-height: 30px;
   text-align: center;
   margin-left: 1080px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 #footer {
   background-color: #4a8bfd;
-  margin-top: 240px;
+  margin-top: 260px;
   align-items: center;
   padding: 10px;
   border-radius: 10px;
@@ -367,11 +377,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .certi {
-  margin-left: 600px;
+  margin-left: 650px;
   margin-top: -70px;
 }
 
 .perinfo {
-  margin-top: -70px;
+  margin-top: -80px;
   margin-left: 1150px;
 }
