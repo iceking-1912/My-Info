@@ -307,7 +307,7 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid rgb(252, 5, 231);
   width: 600px;
   height: 450px;
-  margin-top: -380px;
+  margin-top: -420px;
   margin-left: 750px;
   position: sticky;
 }
